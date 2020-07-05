@@ -19,6 +19,8 @@ nunjucks.configure("views", {
     
 })
 
-server.listen(5001, function() {
+const port = process.env.PORT || 5001
+
+server.listen(port, function() {
     console.log("server is running")
 })
